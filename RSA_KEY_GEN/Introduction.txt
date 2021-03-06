@@ -1,0 +1,27 @@
+
+Introduction:
+To generate the keys for the RSA en- and decryption, we firstly need to choose p and q. Both need to be prime, since we need to calculate Phi(N).
+ N ist the product of p and q. Phi(N), which we call M for now, will later be used to generate d, the number which represents the private key with N. 
+
+Euler's phi function is being used to determine the amount of coprime numbers to N between included 1 and N.
+So when N is a prime number, we know the result will be N-1. This function is very important since there isn't 
+a simple formula to calculate, how many coprime numbers there are. The only way to find out is to bruteforce,
+which is also very ineffective considering we use really huge numbers.
+The reason we know M, is because we determined p and q and both are prime numbers. 
+
+So: 
+phi(N) = phi(p*q) = phi(p) * phi(q) = (p-1)*(q-1) = M
+
+To generate d, we firstly need to choose a number e, which together with N represents the public key. 
+Keep in mind that e needs to be coprime and smaller than M, otherwise it has no multiplicative inverse with mod M (to know why this is, you need a fundamental understanding of modular arithmetic). 
+
+To calculate the multiplicative inverse of e mod M, we need to apply the extended euclidean algorithm. Like the name says, 
+it is an extended version of the euclidean algorithm, which in turn is being used to calculate the greatest common divisor (gcd, or in german ggT). 
+The big difference between both algorithms is that one just gives the greatest common divisor and the other establishes a linear equation in which we can read out the multiplicative inverse d.
+
+Now (e,N) provides the public and (d, N) the private key.
+
+Source (German):
+https://www.scai.fraunhofer.de/content/dam/scai/de/documents/Mediathek/Mathematik%20f%C3%BCr%20die%20Praxis/rsa_skript_und_arbeitsblaetter.pdf
+
+http://www.matheprisma.uni-wuppertal.de/Module/RSA/index.htm?7
