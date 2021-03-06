@@ -7,7 +7,7 @@ Euler's phi function is being used to determine the amount of coprime numbers to
 So when N is a prime number, we know the result will be N-1. This function is very important since there isn't 
 a simple formula to calculate the amount of coprime numbers. The only way to find out is to bruteforce,
 which is also very ineffective considering we use really huge numbers.
-The reason we know M, is because we determined p and q and both are prime numbers. 
+The reason we know M, is because we determined p and q to be prime numbers. 
 
 So: 
 phi(N) = phi(p*q) = phi(p) * phi(q) = (p-1)*(q-1) = M
