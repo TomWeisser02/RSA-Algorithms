@@ -21,7 +21,6 @@ The big difference between both algorithms is that one just gives the greatest c
 
 Now (e,N) provides the public and (d, N) the private key.
 
-Source (German):
+Sources (German):
 https://www.scai.fraunhofer.de/content/dam/scai/de/documents/Mediathek/Mathematik%20f%C3%BCr%20die%20Praxis/rsa_skript_und_arbeitsblaetter.pdf
-
 http://www.matheprisma.uni-wuppertal.de/Module/RSA/index.htm?7
