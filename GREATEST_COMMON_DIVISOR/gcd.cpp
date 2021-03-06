@@ -27,10 +27,10 @@ int main(int argc, char* argv[]) {
 	}
 	
 	std::cout << "--------------------" << std::endl;
-	for (int i = 0; i < rest_list.getSize(); i++) {
+	for (int i = 0; i < rest_list.getSize(); i++)
 		std::cout << rest_list.get(i) << std::endl;
-	}
 	std::cout << "--------------------" << std::endl;
+	
 	std::cout << "Greatest common divisor : " << rest_list.get(rest_list.getSize() - 1) << "\n" << std::endl;
 	
 	system("pause");
