@@ -1,6 +1,7 @@
 #include <iostream>
 #include "ArrayList.h"
 
+// This is my own implementation of the euclidean algorithm in c++. I created this pattern by myself (I only used tutorials to create "ArrayList.h").
 int main(int argc, char* argv[]) {
 
 	int p = 27;
