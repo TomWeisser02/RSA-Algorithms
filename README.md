@@ -1,5 +1,5 @@
 # RSA-Algorithms
-Basic algorithms used for RSA encryption
+Basic algorithms used for RSA encryption. Please use the GNU C++ compiler to assemble the program, otherwise it may not work.
 
 # Introduction
 Hello, this project is to show basic algorithm implementations used for the asymmetric encryption method RSA. 
