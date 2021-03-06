@@ -70,10 +70,8 @@ int main(int argc, char* argv[]) {
 }
 
 bool isPrime(int a) {
-	for (int i = 2; i < a; i++) {
-		if (a % i == 0) {
+	for (int i = 2; i < a; i++) 
+		if (a % i == 0) 
 			return false;
-		}
-	}
 	return true;
 }
