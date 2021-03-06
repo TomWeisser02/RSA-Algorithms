@@ -10,9 +10,8 @@ int main(int argc, char* argv[]) {
 	std::cin >> p;
 	std::cout << "\nPlease enter number q: ";
 	std::cin >> q;
-	if ( !( (isPrime(p) && isPrime(q)) && (p != q) ) ) {
+	if ( !( (isPrime(p) && isPrime(q)) && (p != q) ) )
 		std::cout << "\np and q have to be different numbers and prime!\n" << std::endl;
-	}
 	else {
 		//Generate N, M (Euler function phi) and A (which represents the public key with N and has to be prime to M and A < M) 
 		int const N = p * q;
